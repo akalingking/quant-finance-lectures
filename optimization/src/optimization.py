@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 from autograd import grad, jacobian, numpy as aunp
 
 
-def show_plot(f, x_star, domain=[0,0], samples=100):
+def show_plot(f, x_star, domain=[0,0], samples=500, figSize=(5,4)):
 	"""Plots objective function, derivative, contour, and minimum"""
-	fig,axs = plt.subplots(3,1,figsize=(6,5),sharex="col")
+	fig,axs = plt.subplots(3,1,figsize=figSize, sharex="col")
 
 	# Objective functiot
 	ax = axs[0]
