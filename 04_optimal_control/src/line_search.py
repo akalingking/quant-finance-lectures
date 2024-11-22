@@ -3,7 +3,6 @@ import autograd.numpy as np
 from autograd import grad
 from autograd.numpy import transpose as T
 from autograd.numpy.linalg import norm as Norm
-# https://github.com/gjkennedy/ae6310/blob/master/Line%20Search%20Algorithms.ipynb
 
 
 def zoom(f, x, beta_l, beta_h, c1=10**-4, c2=0.9, verbose=False):
